@@ -21,8 +21,12 @@ def create_taskfile():
         else:
             return "File exists"
     except Exception as e:
-        print(f"Error creating file: {e}")
-        return "Error creating file"
+        return(f"Error creating file: {e}")
+    
+def create_task():
+    print("Please enter the task name\n")
+    task_name = input()
+    pass
 
-print(create_taskfile())
+
 
